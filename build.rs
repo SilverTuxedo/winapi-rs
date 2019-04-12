@@ -10,6 +10,10 @@ use std::env::var;
 const DATA: &'static [(&'static str, &'static [&'static str], &'static [&'static str])] = &[
     // km
     ("d3dkmthk", &["basetsd", "d3dukmdt", "minwindef", "ntdef", "windef"], &[]),
+    ("fwp", &["winnt","ws2def","minwindef","netioapi"], &[]),
+    ("ndis", &["wdm"], &[]),
+    ("wdm", &[], &[]),
+    ("fltkernel", &[], &[]),
     // mmos
     // shared
     ("basetsd", &[], &[]),
@@ -68,6 +72,7 @@ const DATA: &'static [(&'static str, &'static [&'static str], &'static [&'static
     ("ntddndis", &["ifdef", "minwindef"], &[]),
     ("ntddscsi", &["basetsd", "minwindef", "ntdef", "winioctl", "winnt"], &[]),
     ("ntddser", &["devpropdef"], &[]),
+    ("ntddstor", &["devpropdef"], &[]),
     ("ntdef", &["basetsd", "guiddef"], &[]),
     ("ntstatus", &["ntdef"], &[]),
     ("qos", &["minwindef"], &[]),

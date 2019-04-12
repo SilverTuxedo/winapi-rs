@@ -62,6 +62,7 @@ STRUCT!{struct IP_MREQ {
     imr_multiaddr: IN_ADDR,
     imr_interface: IN_ADDR,
 }}
+
 pub type PIP_MREQ = *mut IP_MREQ;
 STRUCT!{struct IP_MREQ_SOURCE {
     imr_multiaddr: IN_ADDR,
